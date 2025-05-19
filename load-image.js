@@ -1,4 +1,4 @@
-export function loadImages(urls) {
+export function loadImage(urls) {
   async function load(url) {
     const image = new Image();
     image.setAttribute('src', url);
