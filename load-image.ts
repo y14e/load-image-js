@@ -1,7 +1,7 @@
 export function loadImage(...urls: string[]): Promise<HTMLImageElement[]> {
   async function load(url: string): Promise<HTMLImageElement> {
     const image = new Image();
-    image.setAttribute('src', url);
+    image.src = url;
     await image.decode();
     return image;
   }

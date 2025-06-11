@@ -1,7 +1,7 @@
 export function loadImage(...urls) {
   async function load(url) {
     const image = new Image();
-    image.setAttribute('src', url);
+    image.src = url;
     await image.decode();
     return image;
   }
